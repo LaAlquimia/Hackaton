@@ -1,0 +1,161 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { 
+	title, 
+	description = "Join the ultimate AI Hackathon featuring a state-of-the-art liquid glass experience. Connect, build, and innovate with AI." 
+} = Astro.props;
+
+// Ensure base path is correct for absolute URLs in assets if needed
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		--font-display: 'Space Grotesk', var(--font-sans);
+
+		/* Neutral Blue Liquid Glass Color Palette */
+		--bg-dark: #070b13;
+		--bg-card: rgba(13, 20, 38, 0.45);
+		--bg-card-hover: rgba(20, 32, 60, 0.6);
+		
+		--border-glass: rgba(255, 255, 255, 0.08);
+		--border-glass-hover: rgba(255, 255, 255, 0.18);
+		--border-glow: rgba(56, 189, 248, 0.25);
+		
+		--text-primary: #f8fafc;
+		--text-secondary: #94a3b8;
+		--text-muted: #64748b;
+		
+		--primary-cyan: #38bdf8;
+		--primary-blue: #2563eb;
+		--primary-glow: rgba(56, 189, 248, 0.4);
+		
+		--transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+		
+		--shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+		--shadow-glow: 0 0 24px 0 rgba(56, 189, 248, 0.15);
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+		scroll-behavior: smooth;
+		background-color: var(--bg-dark);
+		color: var(--text-primary);
+		font-family: var(--font-sans);
+		overflow-x: hidden;
+	}
+
+	body {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		background: 
+			radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 40%),
+			radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.12) 0%, transparent 45%),
+			#070b13;
+		background-attachment: fixed;
+		overflow-x: hidden;
+	}
+
+	/* Scrollbar styling */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: var(--bg-dark);
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 5px;
+		border: 2px solid var(--bg-dark);
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: rgba(56, 189, 248, 0.3);
+	}
+
+	/* Liquid Glass effects utilities */
+	.glass-card {
+		background: var(--bg-card);
+		backdrop-filter: blur(16px) saturate(140%);
+		-webkit-backdrop-filter: blur(16px) saturate(140%);
+		border: 1px solid var(--border-glass);
+		border-radius: 20px;
+		box-shadow: var(--shadow-glass);
+		transition: var(--transition-smooth);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.glass-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -50%;
+		width: 200%;
+		height: 100%;
+		background: linear-gradient(
+			90deg,
+			transparent,
+			rgba(255, 255, 255, 0.03) 30%,
+			rgba(255, 255, 255, 0.08) 50%,
+			rgba(255, 255, 255, 0.03) 70%,
+			transparent
+		);
+		transform: rotate(25deg) translateY(-80%);
+		transition: transform 0.8s ease;
+		pointer-events: none;
+	}
+
+	.glass-card:hover::before {
+		transform: rotate(25deg) translateY(80%);
+	}
+
+	.glass-card:hover {
+		border-color: var(--border-glass-hover);
+		box-shadow: var(--shadow-glass), var(--shadow-glow);
+		transform: translateY(-4px);
+	}
+
+	.text-gradient {
+		background: linear-gradient(135deg, #ffffff 30%, var(--primary-cyan) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+</style>
