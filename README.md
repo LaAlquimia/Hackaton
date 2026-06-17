@@ -1,43 +1,59 @@
-# Liquid.AI Hackathon Landing Page
+# Liquid.AI Hackathon
 
-Este proyecto está construido con **Astro** y gestionado completamente con **Bun** (sin dependencias ni scripts de npm o npx).
+Landing page del hackathon **Liquid.AI** — una competencia de 48hs sobre inteligencia artificial con más de $15,000 USD en premios.
 
-## 🚀 Estructura del Proyecto
+Construido con **Astro** (static site generation) y gestionado con **Bun** (sin npm/npx).
 
-Dentro del proyecto verás las siguientes carpetas y archivos principales:
+---
 
-```text
+## Estructura
+
+```
 /
-├── .github/workflows/deploy.yml # Pipeline de despliegue automático a GitHub Pages
-├── public/                      # Activos estáticos públicos
+├── .github/workflows/deploy.yml   # CI/CD a GitHub Pages
+├── public/
+│   └── .nojekyll                  # Desactiva Jekyll en GitHub Pages
 ├── src/
 │   ├── layouts/
-│   │   └── Layout.astro         # Contenedor base de la aplicación (CSS global y SEO)
+│   │   └── Layout.astro           # CSS global, variables, meta tags
 │   └── pages/
-│       └── index.astro          # Landing page principal (diseño y scripts de interacción)
-├── astro.config.mjs             # Configuración de Astro (base path y site)
-├── package.json                 # Definición de dependencias y scripts de ejecución
-└── bun.lock                     # Archivo de bloqueo exclusivo de Bun
+│       └── index.astro            # Landing page completa
+├── astro.config.mjs
+├── package.json
+└── bun.lock
 ```
 
 ---
 
-## 🧞 Comandos con Bun
-
-Todos los comandos deben ejecutarse desde la raíz del proyecto utilizando `bun`:
+## Comandos
 
 | Comando | Acción |
-| :--- | :--- |
-| `bun install` | Instala todas las dependencias del proyecto |
-| `bun run dev` | Inicia el servidor de desarrollo local en `http://localhost:4321` |
-| `bun run build` | Compila el sitio estático para producción en `./dist/` |
-| `bun run preview` | Previsualiza el build estático localmente |
-| `bun x astro ...` | Ejecuta comandos CLI de Astro directamente |
+|---|---|
+| `bun install` | Instalar dependencias |
+| `bun run dev` | Servidor local en `http://localhost:4321` |
+| `bun run build` | Build estático en `./dist/` |
+| `bun run preview` | Previsualizar build local |
 
 ---
 
-## 🛠️ Configuración de Despliegue
+## Personalizar colores
 
-El despliegue está automatizado con GitHub Actions en cada push a las ramas principales (`main` o `master`).
+Los colores se definen como variables CSS en `src/layouts/Layout.astro`:
 
-Para cambiar la URL de tu sitio, edita la propiedad `site` en [astro.config.mjs](file:///Users/laalquimia/Projects/Hackaton/astro.config.mjs).
+| Variable | Defecto | Descripción |
+|---|---|---|
+| `--primary-cyan` | `#7dd3fc` | Cyan principal (links, badges, glows) |
+| `--primary-blue` | `#60a5fa` | Azul secundario (gradientes, botones) |
+| `--primary-glow` | `rgba(125, 211, 252, 0.4)` | Brillo de los elementos |
+| `--bg-dark` | `#070b13` | Fondo principal |
+| `--text-primary` | `#f8fafc` | Texto principal |
+
+---
+
+## Despliegue
+
+El pipeline en `.github/workflows/deploy.yml` despliega automáticamente a GitHub Pages con cada push a `main`.
+
+La página se sirve en: `https://laalquimia.github.io/Hackaton/`
+
+> **Nota:** El `base` en `astro.config.mjs` debe coincidir con el nombre del repositorio (respeta mayúsculas).
