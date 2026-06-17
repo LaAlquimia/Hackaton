@@ -1,6 +1,6 @@
-# Liquid.AI Hackathon
+# La Alquimia — Agente Autónomo Liquid Glass
 
-Landing page del hackathon **Liquid.AI** — una competencia de 48hs sobre inteligencia artificial con más de $15,000 USD en premios.
+Página del equipo **La Alquimia**, participantes del **Liquid.AI Hackathon 2026**. Presentamos nuestro agente automatizado con arquitectura multi-agente e interfaz liquid glass.
 
 Construido con **Astro** (static site generation) y gestionado con **Bun** (sin npm/npx).
 
@@ -38,13 +38,13 @@ Construido con **Astro** (static site generation) y gestionado con **Bun** (sin 
 
 ## Personalizar colores
 
-Los colores se definen como variables CSS en `src/layouts/Layout.astro`:
+Los colores se definen como variables CSS en `src/layouts/Layout.astro` (paleta **light cyan blue**):
 
 | Variable | Defecto | Descripción |
 |---|---|---|
-| `--primary-cyan` | `#7dd3fc` | Cyan principal (links, badges, glows) |
-| `--primary-blue` | `#60a5fa` | Azul secundario (gradientes, botones) |
-| `--primary-glow` | `rgba(125, 211, 252, 0.4)` | Brillo de los elementos |
+| `--primary-cyan` | `#67e8f9` | Cyan claro principal (links, badges, glows) |
+| `--primary-blue` | `#22d3ee` | Cyan medio (gradientes, botones) |
+| `--primary-glow` | `rgba(103, 232, 249, 0.4)` | Brillo de los elementos |
 | `--bg-dark` | `#070b13` | Fondo principal |
 | `--text-primary` | `#f8fafc` | Texto principal |
 
@@ -57,3 +57,13 @@ El pipeline en `.github/workflows/deploy.yml` despliega automáticamente a GitHu
 La página se sirve en: `https://laalquimia.github.io/Hackaton/`
 
 > **Nota:** El `base` en `astro.config.mjs` debe coincidir con el nombre del repositorio (respeta mayúsculas).
+
+---
+
+## Contenido a personalizar (TBD)
+
+El equipo aún debe definir:
+
+- **Nombre del agente automatizado** — actualmente referido como "agente autónomo"/"agente automatizado"
+- **Funcionalidades concretas** — los placeholders en Capacidades, Tecnología y Roadmap son editables en `src/pages/index.astro`
+- **Enlaces de redes sociales** — los enlaces a GitHub apuntan a `https://github.com/LaAlquimia`

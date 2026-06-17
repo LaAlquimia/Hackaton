@@ -1,9 +1,9 @@
 # Guía de Desarrollo para IAs (AI Developer Guide)
 
-Este repositorio contiene la landing page oficial de **Liquid.AI**, una Hackaton de Inteligencia Artificial diseñada bajo la temática estética **Liquid Glass (Vidrio Líquido)** en tonalidades de azul neutro.
+Este repositorio contiene la landing page del equipo **La Alquimia** para el **Liquid.AI Hackathon**. Presenta un agente automatizado con arquitectura multi-agente bajo la temática estética **Liquid Glass (Vidrio Líquido)** en tonalidades de cyan claro.
 
 ## Stack Tecnológico
-- **Framework Principal:** [Astro](https://astro.build/) (v5+) - Generación de sitio estático rápido e interactivo.
+- **Framework Principal:** [Astro](https://astro.build/) (v6+) - Generación de sitio estático.
 - **Gestor de Paquetes y Runtime:** [Bun](https://bun.sh/) (v1.3.14+) - Para instalación de dependencias, scripts de desarrollo y build rápido.
 - **Estilos:** CSS nativo (Variables globales en CSS y scoped styles integrados en componentes Astro).
 
@@ -44,13 +44,25 @@ La temática se basa en un diseño premium y moderno con el efecto *glassmorphis
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   ```
-- **Esquema de Color (Azul Neutro):**
+- **Esquema de Color (Light Cyan Blue):**
   - Fondo base: `#070b13`
-  - Gradiente de Acento: `#38bdf8` (Cyan) a `#2563eb` (Royal Blue)
+  - Gradiente de Acento: `#67e8f9` (Cyan 300) a `#22d3ee` (Cyan 400)
   - Textos secundarios: `#94a3b8`
 
 ### 3. Configuración para Despliegues en GitHub Pages
 El sitio está configurado para desplegarse automáticamente a la URL `https://LaAlquimia.github.io/Hackaton` mediante el pipeline de GitHub Actions en `.github/workflows/deploy.yml`.
+
+---
+
+## Secciones editables en `src/pages/index.astro`
+
+| Sección | ID | Contenido actual |
+|---|---|---|
+| Hero | `#proyecto` | Presentación del equipo y el proyecto |
+| Capacidades | `#capacidades` | 3 cards placeholder (editar con funcionalidades reales) |
+| Tecnología | `#tecnologia` | 3 cards de arquitectura (editar con tech stack real) |
+| Roadmap | `#roadmap` | Timeline de desarrollo (editar hitos reales) |
+| FAQ | `#faq` | Preguntas sobre el equipo y proyecto |
 
 - **Astro Config:** El archivo [astro.config.mjs](file:///Users/laalquimia/Projects/Hackaton/astro.config.mjs) especifica:
   - `site: 'https://LaAlquimia.github.io'`

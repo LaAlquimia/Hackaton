@@ -4,85 +4,43 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Liquid.AI Hackathon - Innovación Inteligente">
-	<!-- Background Fluid Blobs -->
-	<div class="fluid-background">
-		<div class="blob blob-1"></div>
-		<div class="blob blob-2"></div>
-		<div class="blob blob-3"></div>
-	</div>
-
-	<!-- Navigation Bar -->
-	<header class="navbar">
-		<div class="navbar-container">
-			<a href="#" class="logo">
-				<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 19.5C7.86 19.5 4.5 16.14 4.5 12C4.5 7.86 7.86 4.5 12 4.5C16.14 4.5 19.5 7.86 19.5 12C19.5 16.14 16.14 19.5 12 19.5Z" fill="url(#liquid-grad)"/>
-					<path d="M12 6C8.69 6 6 8.69 6 12C6 14.21 7.2 16.13 9 17.13V15.01C8.1 14.22 7.5 13.07 7.5 11.75C7.5 9.13 9.63 7 12.25 7C14.87 7 17 9.13 17 11.75C17 13.07 16.4 14.22 15.5 15.01V17.13C17.3 16.13 18.5 14.21 18.5 12C18.5 8.69 15.81 6 12 6Z" fill="url(#liquid-grad)"/>
-					<path d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" fill="url(#liquid-grad)"/>
-					<defs>
-						<linearGradient id="liquid-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-							<stop offset="0%" stop-color="#38bdf8" />
-							<stop offset="100%" stop-color="#2563eb" />
-						</linearGradient>
-					</defs>
-				</svg>
-				<span class="logo-text">LIQUID<span class="text-accent">.AI</span></span>
-			</a>
-			
-			<nav class="nav-links">
-				<a href="#about" class="nav-link">Acerca de</a>
-				<a href="#features" class="nav-link">Beneficios</a>
-				<a href="#tracks" class="nav-link">Retos</a>
-				<a href="#schedule" class="nav-link">Agenda</a>
-				<a href="#faq" class="nav-link">FAQ</a>
-			</nav>
-
-			<div class="nav-actions">
-				<button class="btn btn-primary btn-glass trigger-modal">Registrarse</button>
-			</div>
-
-			<button class="mobile-menu-btn" aria-label="Abrir menú">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-		</div>
-	</header>
-
 	<!-- Main Container -->
 	<main class="content-wrapper">
 		<!-- Hero Section -->
-		<section class="hero-section">
+		<section class="hero-section" id="proyecto">
 			<div class="hero-container">
 				<div class="hero-badge glass-card">
 					<span class="pulse-dot"></span>
-					<span>Hackaton Global Virtual • 24-26 de Julio, 2026</span>
+					<span>Equipo Participante • Liquid.AI Hackathon 2026</span>
 				</div>
 				
 				<h1 class="hero-title">
-					Crea Inteligencia en un Entorno <br />
-					<span class="text-gradient">Liquid Glass</span>
+					Construyendo el Futuro de los<br />
+					<span class="text-gradient">Agentes Autónomos</span>
 				</h1>
 				
 				<p class="hero-subtitle">
-					Diseña, codifica y despliega la próxima generación de aplicaciones inteligentes en un sprint de 48 horas. Conéctate con mentores líderes y compite por una bolsa de $15,000 USD.
+					Somos <strong>La Alquimia</strong>, un equipo multidisciplinario que participa en el Liquid.AI Hackathon 
+					con un agente automatizado de nueva generación. Nuestra propuesta combina orquestación multi-agente 
+					con una interfaz liquid glass fluida, transparente y adaptable.
 				</p>
 
 				<div class="hero-actions">
-					<button class="btn btn-primary btn-lg trigger-modal">
-						Unirse a la Hackaton
+					<a href="#capacidades" class="btn btn-primary btn-lg">
+						Conoce el Proyecto
 						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 							<path d="M5 12h14M12 5l7 7-7 7"/>
 						</svg>
-					</button>
-					<a href="#tracks" class="btn btn-secondary btn-lg">
-						Explorar Retos
+					</a>
+					<a href="https://github.com/LaAlquimia" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+						Ver en GitHub
 					</a>
 				</div>
 
 				<!-- Countdown Timer -->
 				<div class="countdown-container glass-card">
-					<div class="countdown-title">EL REGISTRO CIERRA EN</div>
+					<div class="countdown-title">HACKATHON COMIENZA EN</div>
 					<div class="countdown-grid">
 						<div class="countdown-item">
 							<span class="countdown-val" id="days">38</span>
@@ -109,34 +67,34 @@ const base = import.meta.env.BASE_URL;
 		</section>
 
 		<!-- Statistics Section -->
-		<section class="stats-section" id="about">
+		<section class="stats-section">
 			<div class="stats-grid">
 				<div class="stat-card glass-card">
-					<div class="stat-value text-gradient">$15,000+</div>
-					<div class="stat-label">En Premios en Efectivo</div>
+					<div class="stat-value text-gradient">Multi-Agente</div>
+					<div class="stat-label">Arquitectura Orquestada</div>
 				</div>
 				<div class="stat-card glass-card">
-					<div class="stat-value text-gradient">48 Hrs</div>
-					<div class="stat-label">De Co-creación y Hacking</div>
+					<div class="stat-value text-gradient">10+</div>
+					<div class="stat-label">APIs y Servicios</div>
 				</div>
 				<div class="stat-card glass-card">
-					<div class="stat-value text-gradient">500+</div>
-					<div class="stat-label">Hackers Conectados</div>
+					<div class="stat-value text-gradient">Tiempo Real</div>
+					<div class="stat-label">Procesamiento en Vivo</div>
 				</div>
 				<div class="stat-card glass-card">
-					<div class="stat-value text-gradient">20+</div>
-					<div class="stat-label">Expertos y Mentores</div>
+					<div class="stat-value text-gradient">100%</div>
+					<div class="stat-label">Interfaz Liquid Glass</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Features/Benefits Section -->
-		<section class="features-section" id="features">
+		<!-- Features / Capacidades Section -->
+		<section class="features-section" id="capacidades">
 			<div class="section-header">
-				<span class="section-tag font-display">Beneficios del Evento</span>
-				<h2 class="section-title">¿Por qué deberías participar?</h2>
+				<span class="section-tag font-display">Capacidades del Agente</span>
+				<h2 class="section-title">¿Qué puede hacer?</h2>
 				<p class="section-description">
-					Te ofrecemos un entorno digital diseñado para potenciar tu creatividad técnica y facilitar la creación de redes.
+					Nuestro agente automatizado está diseñado para comprender, razonar y actuar en entornos complejos con una interfaz líquida y transparente.
 				</p>
 			</div>
 
@@ -147,86 +105,88 @@ const base = import.meta.env.BASE_URL;
 							<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
 						</svg>
 					</div>
-					<h3 class="feature-title">Acceso a APIs Premium</h3>
-					<p class="feature-text">Créditos gratuitos para modelos de lenguaje avanzados, herramientas de IA generativa y plataformas de despliegue en la nube.</p>
+					<h3 class="feature-title">Orquestación Multi-Agente</h3>
+					<p class="feature-text">Coordina múltiples sub-agentes especializados que colaboran en paralelo para resolver tareas complejas de forma autónoma.</p>
 				</div>
 
 				<div class="feature-card glass-card">
 					<div class="feature-icon">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+							<circle cx="12" cy="12" r="10"/>
+							<polyline points="12 6 12 12 16 14"/>
 						</svg>
 					</div>
-					<h3 class="feature-title">Mentoría en Vivo</h3>
-					<p class="feature-text">Canales dedicados con ingenieros de software, diseñadores UX y especialistas en IA listos para resolver dudas técnicas.</p>
+					<h3 class="feature-title">Memoria Contextual</h3>
+					<p class="feature-text">Mantiene estado y contexto a lo largo de las interacciones, aprendiendo de cada conversación para ofrecer respuestas más precisas.</p>
 				</div>
 
 				<div class="feature-card glass-card">
 					<div class="feature-icon">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-							<circle cx="12" cy="8" r="7"/>
-							<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+							<rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+							<line x1="8" y1="21" x2="16" y2="21"/>
+							<line x1="12" y1="17" x2="12" y2="21"/>
 						</svg>
 					</div>
-					<h3 class="feature-title">Certificación Oficial</h3>
-					<p class="feature-text">Todas las entregas válidas recibirán una insignia digital certificada respaldada por nuestros patrocinadores.</p>
+					<h3 class="feature-title">Interfaz Liquid Glass</h3>
+					<p class="feature-text">Experiencia visual fluida con efectos de vidrio líquido, animaciones orgánicas y una estética cyberpunk que se adapta al contexto del usuario.</p>
 				</div>
 			</div>
 		</section>
 
-		<!-- Tracks/Challenges Section -->
-		<section class="tracks-section" id="tracks">
+		<!-- Technology / Arquitectura Section -->
+		<section class="tracks-section" id="tecnologia">
 			<div class="section-header">
-				<span class="section-tag font-display">Categorías de Participación</span>
-				<h2 class="section-title">Encuentra tu Categoría</h2>
+				<span class="section-tag font-display">Arquitectura</span>
+				<h2 class="section-title">Nuestra Propuesta Tecnológica</h2>
 				<p class="section-description">
-					Elige el track que mejor se alinee con tus habilidades. Puedes participar en cualquier categoría con soluciones impulsadas por IA.
+					Combinamos tecnologías de vanguardia para construir un agente autónomo robusto, escalable y visualmente innovador.
 				</p>
 			</div>
 
 			<div class="tracks-grid">
 				<div class="track-card glass-card">
-					<div class="track-badge">AGENTES</div>
-					<h3 class="track-title">Agentes Autónomos</h3>
-					<p class="track-desc">Construye sistemas autónomos capaces de razonar, planificar y ejecutar tareas complejas en la web o interfaces locales.</p>
+					<div class="track-badge">CORE</div>
+					<h3 class="track-title">Motor del Agente</h3>
+					<p class="track-desc">Núcleo inteligente que orquesta sub-agentes especializados con capacidad de razonamiento, planificación y ejecución autónoma de tareas.</p>
 					<ul class="track-deliverables">
-						<li><span>✓</span> Integración multi-agente</li>
-						<li><span>✓</span> Memoria de largo plazo</li>
-						<li><span>✓</span> Interacción con APIs externas</li>
+						<li><span>✓</span> Razonamiento multi-paso</li>
+						<li><span>✓</span> Planificación dinámica</li>
+						<li><span>✓</span> Ejecución con herramientas externas</li>
 					</ul>
 				</div>
 
 				<div class="track-card glass-card">
-					<div class="track-badge">INTERFACES</div>
-					<h3 class="track-title">Generación de UI & UX</h3>
-					<p class="track-desc">Genera interfaces web vivas o herramientas dinámicas que adapten su interfaz gráfica según el comportamiento de la IA.</p>
+					<div class="track-badge">INTERFAZ</div>
+					<h3 class="track-title">Liquid Glass UI</h3>
+					<p class="track-desc">Capa de presentación con efectos glassmorphism dinámicos, animaciones fluidas y una experiencia visual que refleja la temática del vidrio líquido.</p>
 					<ul class="track-deliverables">
-						<li><span>✓</span> Diseño responsivo</li>
-						<li><span>✓</span> Micro-interacciones fluidas</li>
-						<li><span>✓</span> Temática Liquid Glass integrada</li>
+						<li><span>✓</span> Glassmorphism dinámico</li>
+						<li><span>✓</span> Micro-interacciones orgánicas</li>
+						<li><span>✓</span> Modo adaptativo claro/oscuro</li>
 					</ul>
 				</div>
 
 				<div class="track-card glass-card">
-					<div class="track-badge">PRODUCTIVIDAD</div>
-					<h3 class="track-title">Copilotos de Trabajo</h3>
-					<p class="track-desc">Desarrolla herramientas que asistan a profesionales en flujos de trabajo de análisis, redacción de código o generación de media.</p>
+					<div class="track-badge">INFRAESTRUCTURA</div>
+					<h3 class="track-title">Integración y Despliegue</h3>
+					<p class="track-desc">Backend escalable con conexión a APIs externas, base de datos vectorial para memoria persistente y despliegue automatizado en la nube.</p>
 					<ul class="track-deliverables">
-						<li><span>✓</span> Optimización de tareas cotidianas</li>
-						<li><span>✓</span> Interfaz conversacional natural</li>
-						<li><span>✓</span> Extensiones del navegador o IDEs</li>
+						<li><span>✓</span> APIs REST y WebSocket</li>
+						<li><span>✓</span> Memoria vectorial persistente</li>
+						<li><span>✓</span> CI/CD a GitHub Pages</li>
 					</ul>
 				</div>
 			</div>
 		</section>
 
-		<!-- Timeline / Schedule Section -->
-		<section class="schedule-section" id="schedule">
+		<!-- Timeline / Roadmap Section -->
+		<section class="schedule-section" id="roadmap">
 			<div class="section-header">
-				<span class="section-tag font-display">Itinerario del Hackathon</span>
-				<h2 class="section-title">Cronograma del Evento</h2>
+				<span class="section-tag font-display">Roadmap del Proyecto</span>
+				<h2 class="section-title">Nuestra Hoja de Ruta</h2>
 				<p class="section-description">
-					Tres días de pura innovación y desarrollo. No te pierdas ninguna de nuestras sesiones clave.
+					El camino que recorremos para llevar nuestro agente autónomo del concepto a la realidad.
 				</p>
 			</div>
 
@@ -236,36 +196,36 @@ const base = import.meta.env.BASE_URL;
 				<div class="timeline-item">
 					<div class="timeline-marker glass-card"></div>
 					<div class="timeline-content glass-card">
-						<span class="timeline-time">Viernes, 24 de Julio • 17:00 (UTC)</span>
-						<h3 class="timeline-title">Ceremonia de Apertura</h3>
-						<p class="timeline-text">Bienvenida, anuncio oficial de las APIs patrocinadoras, y revelación de los criterios de evaluación finales.</p>
+						<span class="timeline-time">Semana 1 • Kickoff</span>
+						<h3 class="timeline-title">Definición del Concepto</h3>
+						<p class="timeline-text">Definición del alcance del agente, selección de tecnologías base y diseño de la arquitectura del sistema multi-agente.</p>
 					</div>
 				</div>
 
 				<div class="timeline-item">
 					<div class="timeline-marker glass-card"></div>
 					<div class="timeline-content glass-card">
-						<span class="timeline-time">Viernes, 24 de Julio • 18:00 (UTC)</span>
-						<h3 class="timeline-title">¡Comienza la Codificación!</h3>
-						<p class="timeline-text">Apertura del repositorio de envío y habilitación de los canales de asistencia técnica y mentoría.</p>
+						<span class="timeline-time">Semana 2-3 • Desarrollo</span>
+						<h3 class="timeline-title">MVP del Agente</h3>
+						<p class="timeline-text">Implementación del núcleo del agente con capacidad de razonamiento básico, integración de APIs y primera versión de la interfaz liquid glass.</p>
 					</div>
 				</div>
 
 				<div class="timeline-item">
 					<div class="timeline-marker glass-card"></div>
 					<div class="timeline-content glass-card">
-						<span class="timeline-time">Sábado, 25 de Julio • 15:00 (UTC)</span>
-						<h3 class="timeline-title">Sesión de Mentoría UX & Tech</h3>
-						<p class="timeline-text">Revisión de proyectos intermedia por parte de mentores especializados para guiar la viabilidad del software.</p>
+						<span class="timeline-time">Semana 4 • Preparación</span>
+						<h3 class="timeline-title">Demo y Testing</h3>
+						<p class="timeline-text">Pruebas de integración, refinamiento de la interfaz, preparación de la demo y ensayo del pitch para la presentación final.</p>
 					</div>
 				</div>
 
 				<div class="timeline-item">
 					<div class="timeline-marker glass-card"></div>
 					<div class="timeline-content glass-card">
-						<span class="timeline-time">Domingo, 26 de Julio • 18:00 (UTC)</span>
-						<h3 class="timeline-title">Cierre de Entregas & Pitches</h3>
-						<p class="timeline-text">Hora límite para subir el código y un video de demostración de 3 minutos. Comienza la deliberación.</p>
+						<span class="timeline-time">24-26 Julio • Hackathon</span>
+						<h3 class="timeline-title">Liquid.AI Hackathon</h3>
+						<p class="timeline-text">Presentación final del proyecto, demo en vivo ante los jueces y entrega del repositorio con toda la documentación técnica.</p>
 					</div>
 				</div>
 			</div>
@@ -275,25 +235,25 @@ const base = import.meta.env.BASE_URL;
 		<section class="faq-section" id="faq">
 			<div class="section-header">
 				<span class="section-tag font-display">Preguntas Frecuentes</span>
-				<h2 class="section-title">Resuelve tus Dudas</h2>
+				<h2 class="section-title">Sobre el Equipo y el Proyecto</h2>
 			</div>
 
 			<div class="faq-grid">
 				<div class="faq-card glass-card">
-					<h3 class="faq-question">¿El registro tiene algún costo?</h3>
-					<p class="faq-answer">No, la participación en Liquid.AI es completamente gratuita. Solo necesitas una cuenta de GitHub para registrarte.</p>
+					<h3 class="faq-question">¿Quiénes son La Alquimia?</h3>
+					<p class="faq-answer">Somos un equipo multidisciplinario de desarrolladores, diseñadores y entusiastas de la IA que participamos en el Liquid.AI Hackathon con un proyecto de agente autónomo.</p>
 				</div>
 				<div class="faq-card glass-card">
-					<h3 class="faq-question">¿Puedo participar individualmente?</h3>
-					<p class="faq-answer">Sí, puedes participar solo o en equipos de hasta 4 integrantes. Te ayudaremos a buscar equipo si no tienes uno.</p>
+					<h3 class="faq-question">¿Qué están construyendo exactamente?</h3>
+					<p class="faq-answer">Un agente automatizado con arquitectura multi-agente, capaz de razonar, planificar y ejecutar tareas complejas. Todo envuelto en una interfaz liquid glass de última generación.</p>
 				</div>
 				<div class="faq-card glass-card">
-					<h3 class="faq-question">¿Qué herramientas de IA puedo usar?</h3>
-					<p class="faq-answer">Cualquier API o modelo de IA es válido. Brindaremos accesos premium exclusivos de nuestros patrocinadores.</p>
+					<h3 class="faq-question">¿Qué tecnologías utilizan?</h3>
+					<p class="faq-answer">El proyecto está construido con Astro, Bun, CSS nativo con glassmorphism, y se integra con APIs de IA generativa, bases de datos vectoriales y servicios cloud.</p>
 				</div>
 				<div class="faq-card glass-card">
-					<h3 class="faq-question">¿Cómo se realiza el despliegue?</h3>
-					<p class="faq-answer">Se sugiere que todas las interfaces sean desplegadas en plataformas web públicas para facilitar su testeo directo.</p>
+					<h3 class="faq-question">¿Dónde puedo seguir el proyecto?</h3>
+					<p class="faq-answer">Todo el desarrollo es público en nuestro repositorio de GitHub. Puedes seguir nuestro progreso, revisar el código y contribuir con sugerencias.</p>
 				</div>
 			</div>
 		</section>
@@ -301,27 +261,18 @@ const base = import.meta.env.BASE_URL;
 		<!-- CTA Banner -->
 		<section class="cta-banner">
 			<div class="cta-card glass-card">
-				<h2 class="cta-title">¿Listo para cambiar las reglas del juego?</h2>
-				<p class="cta-text">Las plazas son limitadas para garantizar la mejor calidad en la mentoría interactiva. Asegura tu lugar.</p>
-				<button class="btn btn-primary btn-lg trigger-modal">Registrarme Ahora</button>
+				<h2 class="cta-title">¿Quieres saber más sobre nuestro proyecto?</h2>
+				<p class="cta-text">Síguenos en GitHub para no perderte ninguna actualización del desarrollo de nuestro agente autónomo liquid glass.</p>
+				<a href="https://github.com/LaAlquimia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+					Seguir en GitHub
+				</a>
 			</div>
 		</section>
 	</main>
 
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="footer-container">
-			<p class="footer-copy">© 2026 Liquid.AI. Todos los derechos reservados.</p>
-			<div class="footer-links">
-				<a href="#" class="footer-link">Términos</a>
-				<a href="#" class="footer-link">Privacidad</a>
-				<a href="#" class="footer-link">Código de Conducta</a>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Register Modal -->
-	<div class="modal-overlay" id="register-modal">
+	<!-- Contact Modal -->
+	<div class="modal-overlay" id="contact-modal">
 		<div class="modal-card glass-card">
 			<button class="modal-close" aria-label="Cerrar modal">
 				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -331,37 +282,28 @@ const base = import.meta.env.BASE_URL;
 			</button>
 			
 			<div class="modal-header">
-				<h3 class="modal-title font-display text-gradient">Únete a Liquid.AI</h3>
-				<p class="modal-desc">Completa tu registro para participar y recibir tus accesos a las APIs.</p>
+				<h3 class="modal-title font-display text-gradient">Contáctanos</h3>
+				<p class="modal-desc">Déjanos tu mensaje y te responderemos a la brevedad.</p>
 			</div>
 
-			<form class="modal-form" id="registration-form">
+			<form class="modal-form" id="contact-form">
 				<div class="form-group">
-					<label for="reg-name" class="form-label">Nombre Completo</label>
-					<input type="text" id="reg-name" required class="form-input" placeholder="Ej. Ana Beltrán" />
+					<label for="contact-name" class="form-label">Nombre</label>
+					<input type="text" id="contact-name" required class="form-input" placeholder="Tu nombre" />
 				</div>
 				
 				<div class="form-group">
-					<label for="reg-email" class="form-label">Correo Electrónico</label>
-					<input type="email" id="reg-email" required class="form-input" placeholder="ana@example.com" />
+					<label for="contact-email" class="form-label">Correo Electrónico</label>
+					<input type="email" id="contact-email" required class="form-input" placeholder="tu@email.com" />
 				</div>
 
 				<div class="form-group">
-					<label for="reg-github" class="form-label">Usuario de GitHub</label>
-					<input type="text" id="reg-github" required class="form-input" placeholder="ej. anabeltran" />
-				</div>
-
-				<div class="form-group">
-					<label for="reg-track" class="form-label">Track de Interés</label>
-					<select id="reg-track" class="form-input">
-						<option value="agents">Agentes Autónomos</option>
-						<option value="ui">Generación de UI & UX</option>
-						<option value="productivity">Copilotos de Trabajo</option>
-					</select>
+					<label for="contact-message" class="form-label">Mensaje</label>
+					<textarea id="contact-message" rows="4" class="form-input" placeholder="Cuéntanos sobre tu interés en el proyecto..."></textarea>
 				</div>
 
 				<button type="submit" class="btn btn-primary btn-submit">
-					Confirmar Registro
+					Enviar Mensaje
 				</button>
 			</form>
 
@@ -371,9 +313,9 @@ const base = import.meta.env.BASE_URL;
 						<polyline points="20 6 9 17 4 12"/>
 					</svg>
 				</div>
-				<h4 class="success-title font-display text-gradient">¡Registro Completo!</h4>
-				<p class="success-desc">Te hemos enviado un correo de confirmación con las instrucciones para unirte al Discord oficial.</p>
-				<button class="btn btn-secondary close-success-btn">Entendido</button>
+				<h4 class="success-title font-display text-gradient">¡Mensaje Enviado!</h4>
+				<p class="success-desc">Gracias por contactarnos. Te responderemos lo antes posible.</p>
+				<button class="btn btn-secondary close-success-btn">Cerrar</button>
 			</div>
 		</div>
 	</div>
@@ -406,7 +348,7 @@ const base = import.meta.env.BASE_URL;
 		left: 10%;
 		width: 450px;
 		height: 450px;
-		background: radial-gradient(circle, rgba(56, 189, 248, 0.4) 0%, transparent 70%);
+		background: radial-gradient(circle, rgba(103, 232, 249, 0.35) 0%, transparent 70%);
 	}
 
 	.blob-2 {
@@ -414,7 +356,7 @@ const base = import.meta.env.BASE_URL;
 		right: -5%;
 		width: 500px;
 		height: 500px;
-		background: radial-gradient(circle, rgba(37, 99, 235, 0.35) 0%, transparent 70%);
+		background: radial-gradient(circle, rgba(34, 211, 238, 0.3) 0%, transparent 70%);
 		animation-delay: -5s;
 		animation-duration: 25s;
 	}
@@ -424,7 +366,7 @@ const base = import.meta.env.BASE_URL;
 		left: 50%;
 		width: 350px;
 		height: 350px;
-		background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, transparent 70%);
+		background: radial-gradient(circle, rgba(103, 232, 249, 0.2) 0%, transparent 70%);
 		animation-delay: -10s;
 	}
 
@@ -493,7 +435,7 @@ const base = import.meta.env.BASE_URL;
 
 	.nav-link:hover {
 		color: var(--primary-cyan);
-		text-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
+		text-shadow: 0 0 10px rgba(103, 232, 249, 0.35);
 	}
 
 	.mobile-menu-btn {
@@ -535,12 +477,12 @@ const base = import.meta.env.BASE_URL;
 	.btn-primary {
 		background: linear-gradient(135deg, var(--primary-cyan) 0%, var(--primary-blue) 100%);
 		color: white;
-		box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+		box-shadow: 0 4px 15px rgba(103, 232, 249, 0.2);
 	}
 
 	.btn-primary:hover {
 		transform: translateY(-2px);
-		box-shadow: 0 6px 20px rgba(56, 189, 248, 0.35);
+		box-shadow: 0 6px 20px rgba(103, 232, 249, 0.35);
 	}
 
 	.btn-glass {
@@ -550,7 +492,7 @@ const base = import.meta.env.BASE_URL;
 	}
 
 	.btn-glass:hover {
-		background: rgba(56, 189, 248, 0.15);
+		background: rgba(103, 232, 249, 0.15);
 		border-color: var(--primary-cyan);
 	}
 
@@ -777,13 +719,13 @@ const base = import.meta.env.BASE_URL;
 		width: 48px;
 		height: 48px;
 		border-radius: 12px;
-		background: rgba(56, 189, 248, 0.1);
+		background: rgba(103, 232, 249, 0.1);
 		color: var(--primary-cyan);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 1.5rem;
-		border: 1px solid rgba(56, 189, 248, 0.25);
+		border: 1px solid rgba(103, 232, 249, 0.25);
 	}
 
 	.feature-title {
@@ -982,7 +924,7 @@ const base = import.meta.env.BASE_URL;
 		padding: 4rem 2rem;
 		max-width: 900px;
 		margin: 0 auto;
-		background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 100%), var(--bg-card);
+		background: radial-gradient(circle at 50% 50%, rgba(34, 211, 238, 0.08) 0%, transparent 100%), var(--bg-card);
 	}
 
 	.cta-title {
@@ -1147,8 +1089,13 @@ const base = import.meta.env.BASE_URL;
 
 	.form-input:focus {
 		border-color: var(--primary-cyan);
-		box-shadow: 0 0 10px rgba(56, 189, 248, 0.15);
+		box-shadow: 0 0 10px rgba(103, 232, 249, 0.15);
 		background: rgba(255, 255, 255, 0.05);
+	}
+
+	textarea.form-input {
+		resize: vertical;
+		min-height: 100px;
 	}
 
 	select.form-input option {
@@ -1174,15 +1121,15 @@ const base = import.meta.env.BASE_URL;
 	.success-icon-container {
 		width: 64px;
 		height: 64px;
-		background: rgba(56, 189, 248, 0.1);
+		background: rgba(103, 232, 249, 0.1);
 		color: var(--primary-cyan);
-		border: 1px solid rgba(56, 189, 248, 0.25);
+		border: 1px solid rgba(103, 232, 249, 0.25);
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 1.5rem;
-		box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+		box-shadow: 0 0 20px rgba(103, 232, 249, 0.15);
 	}
 
 	.success-title {
@@ -1260,11 +1207,11 @@ const base = import.meta.env.BASE_URL;
 </style>
 
 <script>
-	// Registration Modal Logic
-	const modal = document.getElementById('register-modal');
+	// Contact Modal Logic
+	const modal = document.getElementById('contact-modal');
 	const triggers = document.querySelectorAll('.trigger-modal');
 	const closeBtn = document.querySelector('.modal-close');
-	const form = document.getElementById('registration-form');
+	const form = document.getElementById('contact-form');
 	const successState = document.getElementById('modal-success');
 	const successCloseBtn = document.querySelector('.close-success-btn');
 
@@ -1276,7 +1223,6 @@ const base = import.meta.env.BASE_URL;
 	const closeModal = () => {
 		modal?.classList.remove('active');
 		document.body.style.overflow = '';
-		// Reset form state after closure animation
 		setTimeout(() => {
 			if (form && successState) {
 				form.style.display = 'flex';
@@ -1286,7 +1232,6 @@ const base = import.meta.env.BASE_URL;
 		}, 300);
 	};
 
-	triggers.forEach(trigger => trigger.addEventListener('click', openModal));
 	closeBtn?.addEventListener('click', closeModal);
 	successCloseBtn?.addEventListener('click', closeModal);
 
@@ -1294,10 +1239,8 @@ const base = import.meta.env.BASE_URL;
 		if (e.target === modal) closeModal();
 	});
 
-	// Handle registration submit
 	form?.addEventListener('submit', (e) => {
 		e.preventDefault();
-		// Simulation of successful server save
 		if (form && successState) {
 			form.style.display = 'none';
 			successState.style.display = 'flex';
