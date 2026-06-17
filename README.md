@@ -1,46 +1,43 @@
-# Astro Starter Kit: Basics
+# Liquid.AI Hackathon Landing Page
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este proyecto está construido con **Astro** y gestionado completamente con **Bun** (sin dependencias ni scripts de npm o npx).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Estructura del Proyecto
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dentro del proyecto verás las siguientes carpetas y archivos principales:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── .github/workflows/deploy.yml # Pipeline de despliegue automático a GitHub Pages
+├── public/                      # Activos estáticos públicos
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro         # Contenedor base de la aplicación (CSS global y SEO)
+│   └── pages/
+│       └── index.astro          # Landing page principal (diseño y scripts de interacción)
+├── astro.config.mjs             # Configuración de Astro (base path y site)
+├── package.json                 # Definición de dependencias y scripts de ejecución
+└── bun.lock                     # Archivo de bloqueo exclusivo de Bun
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## 🧞 Comandos con Bun
 
-All commands are run from the root of the project, from a terminal:
+Todos los comandos deben ejecutarse desde la raíz del proyecto utilizando `bun`:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Comando | Acción |
+| :--- | :--- |
+| `bun install` | Instala todas las dependencias del proyecto |
+| `bun run dev` | Inicia el servidor de desarrollo local en `http://localhost:4321` |
+| `bun run build` | Compila el sitio estático para producción en `./dist/` |
+| `bun run preview` | Previsualiza el build estático localmente |
+| `bun x astro ...` | Ejecuta comandos CLI de Astro directamente |
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🛠️ Configuración de Despliegue
+
+El despliegue está automatizado con GitHub Actions en cada push a las ramas principales (`main` o `master`).
+
+Para cambiar la URL de tu sitio, edita la propiedad `site` en [astro.config.mjs](file:///Users/laalquimia/Projects/Hackaton/astro.config.mjs).

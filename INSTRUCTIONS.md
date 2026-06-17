@@ -54,6 +54,6 @@ El sitio está configurado para desplegarse automáticamente a la URL `https://L
 
 - **Astro Config:** El archivo [astro.config.mjs](file:///Users/laalquimia/Projects/Hackaton/astro.config.mjs) especifica:
   - `site: 'https://LaAlquimia.github.io'`
-  - `base: '/'`
+  - `base: '/Hackaton'`
   - `output: 'static'`
 - Si cambias el dominio de destino, actualiza el valor `site` en `astro.config.mjs`.
